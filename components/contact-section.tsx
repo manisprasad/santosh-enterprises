@@ -2,31 +2,9 @@
 
 import type React from "react"
 
-import { useState } from "react"
 import { Phone, Mail, MapPin, Send } from "lucide-react"
 
 export function ContactSection() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  })
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }))
-  }
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
-    setFormData({ name: "", email: "", phone: "", message: "" })
-  }
-
   return (
     <section id="contact" className="py-16 md:py-24 bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,7 +52,10 @@ export function ContactSection() {
           </div>
 
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form action="https://api.web3forms.com/submit" method="POST" className="space-y-6">
+            <input type="hidden" name="access_key" value="a11e3715-d6a5-4ae5-8e6d-3662e0112dc7" />
+            <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                 Full Name
@@ -83,8 +64,6 @@ export function ContactSection() {
                 type="text"
                 id="name"
                 name="name"
-                value={formData.name}
-                onChange={handleChange}
                 required
                 className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
                 placeholder="Your name"
@@ -99,8 +78,6 @@ export function ContactSection() {
                 type="email"
                 id="email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
                 required
                 className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
                 placeholder="your@email.com"
@@ -115,8 +92,6 @@ export function ContactSection() {
                 type="tel"
                 id="phone"
                 name="phone"
-                value={formData.phone}
-                onChange={handleChange}
                 className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
                 placeholder="+91 XXXX XXXX XX"
               />
@@ -129,8 +104,6 @@ export function ContactSection() {
               <textarea
                 id="message"
                 name="message"
-                value={formData.message}
-                onChange={handleChange}
                 required
                 rows={4}
                 className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground resize-none"
