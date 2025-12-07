@@ -7,36 +7,38 @@ export function AboutSection() {
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">About Santosh Enterprises</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Established with a passion for quality and customer satisfaction, Santosh Enterprises has been serving
-                the home furnishing industry with excellence for over two decades.
+                Santosh Enterprises is a multi-service provider company specializing in furniture, upholstery, and
+                interior maintenance. Founded by Santosh Kumar, we have been delivering exceptional service across
+                furniture, textiles, and home furnishing sectors.
               </p>
               <p>
-                We specialize in providing premium furniture solutions, decorative elements, and professional services
-                that transform spaces into beautiful, functional environments.
+                We provide a complete range of solutions including chairs, sofas, blinds, curtains, carpets,
+                dry-cleaning, glass-mirror work, and chick/jafri installations with professional sales and repair
+                services.
               </p>
               <p>
-                Our team of experienced professionals is dedicated to delivering superior products with expert
-                installation and ongoing support services.
+                With Pan India service availability and trusted partnerships with leading national corporations, we are
+                committed to delivering superior quality products and professional maintenance services.
               </p>
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-card p-6 rounded-lg border border-border text-center">
-              <div className="text-3xl font-bold text-primary mb-2">25+</div>
-              <p className="text-sm text-muted-foreground">Years of Experience</p>
+              <div className="text-3xl font-bold text-primary mb-2">8+</div>
+              <p className="text-sm text-muted-foreground">Service Categories</p>
             </div>
             <div className="bg-card p-6 rounded-lg border border-border text-center">
               <div className="text-3xl font-bold text-primary mb-2">1000+</div>
               <p className="text-sm text-muted-foreground">Satisfied Clients</p>
             </div>
             <div className="bg-card p-6 rounded-lg border border-border text-center">
-              <div className="text-3xl font-bold text-primary mb-2">6+</div>
-              <p className="text-sm text-muted-foreground">Service Categories</p>
+              <div className="text-3xl font-bold text-primary mb-2">25+</div>
+              <p className="text-sm text-muted-foreground">Years Experience</p>
             </div>
             <div className="bg-card p-6 rounded-lg border border-border text-center">
-              <div className="text-3xl font-bold text-primary mb-2">100%</div>
-              <p className="text-sm text-muted-foreground">Quality Assured</p>
+              <div className="text-3xl font-bold text-primary mb-2">PAN India</div>
+              <p className="text-sm text-muted-foreground">Service Coverage</p>
             </div>
           </div>
         </div>

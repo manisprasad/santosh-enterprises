@@ -46,8 +46,8 @@ export function ContactSection() {
               </div>
               <div>
                 <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                <p className="text-muted-foreground">+91 9873123274</p>
-                <p className="text-muted-foreground">+91 8368724895</p>
+                <p className="text-muted-foreground">+91 98731 23274</p>
+                <p className="text-muted-foreground">+91 83687 24395</p>
               </div>
             </div>
 
@@ -57,7 +57,7 @@ export function ContactSection() {
               </div>
               <div>
                 <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                <p className="text-muted-foreground">skchair.sofa@outlook.com</p>
+                <p className="text-muted-foreground">skchairsofa@outlook.com</p>
               </div>
             </div>
 
@@ -66,9 +66,9 @@ export function ContactSection() {
                 <MapPin className="w-6 h-6 text-primary-foreground" />
               </div>
               <div>
-                <h3 className="font-semibold text-foreground mb-1">Headquarters</h3>
+                <h3 className="font-semibold text-foreground mb-1">Service Coverage</h3>
                 <p className="text-muted-foreground">Pan India Service</p>
-                <p className="text-muted-foreground">Trusted Partner Network</p>
+                <p className="text-muted-foreground">Owner: Santosh Kumar</p>
               </div>
             </div>
           </div>
